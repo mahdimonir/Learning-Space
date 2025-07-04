@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 1vw;
+    margin-top: 100px !important;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  
+  article {
+    font-size: 20px;
+  }
+  
+  /* Custom css */
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .p {
+    padding: 1rem;
+  }
+  .p2 {
+    padding: 2rem;
+  }
+  .pb {
+    padding-bottom: 1rem;
+  }
+  .pt {
+    padding-top: 1rem;
+  }
+  .mx {
+    margin: 0px 20px;
+  }
+  .my {
+    margin: 1rem 0px;
+  }
+  .mt {
+    margin-top: 1rem;
+  }
+  .p-btn {
+    padding: 10px 20px;
+  }
+  
+  .container1 {
+    margin: 0 auto;
+    padding: 0 220px;
+  }
+  
+  .page-btn {
+    background-color: #212529;
+    border: none;
+  }
+  .page-btn a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .page-btn2 {
+    background-color: white;
+    border: none;
+  }
+  .page-btn2 a {
+    color: #212529;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 22px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+.container {
+    padding: 0px 15px;
+    margin: 0px 50px auto;
+    justify-content: center;
+  }
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+
+  /* Header */
+  nav {
+    background-color: #212529;
+    color: white;
+    position: fixed;
+    margin-top: -100px!important;
+    height: 80px;
+    border-radius: 3px;
+  }
+  nav .nav-btns ul li a {
+    color: white;
+    font-size: 26px;
+  }
+  nav .nav-btns ul li a:hover {
+    border-bottom: 1px solid white;
+  }
+  
+
+/* Hero */
+main .hero {
+    background-color: #dee2e6;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  main section .banner-text {
+    width: 600px;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+  main section .banner-text .banner-btn button {
+    margin-top: 20px;
+    text-align: start;
+  }
+  
+  main section .banner-img img {
+    width: 600px;
+    margin: auto 0;
+    border-radius: 5px;
+  }
+  
+
+/* Location */
+main .location {
+  background-color: #dee2e6;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px 10px 10px 40px;
+}
+  
+/* Table */
+.timing {
+    margin-top: 40px;
+    background-color: #dee2e6;
+    padding: 10px 50px 50px 50px;
+    border-radius: 5px;
+  }
+  .timing .table-center {
+    display: flex;
+    justify-content: center;
+  }
+  .timing table {
+    font-size: 18px;
+    border-collapse: collapse;
+  }
+  .timing table thead th {
+    text-align: start;
+    font-size: 26px;
+    padding: 10px 10px 10px 6px;
+  }
+  .timing table tbody tr td {
+    padding: 16px 16px 16px 6px;
+    font-size: 22px;
+  }
+  
+  /* Blog */
+.blog-article{
+    margin-top: 40px;
+    background-color: #dee2e6;
+    padding: 10px 50px 30px 50px;
+    border-radius: 5px;
+  }
+  .blog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #dee2e6;
+    padding: 30px 50px 30px 30px;
+    border-radius: 5px;
+  }
+  
+  .blog .blog-card {
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+  }
+  .blog .blog-card .blog-img {
+    display: flex;
+    justify-content: center;
+  }
+  .blog .blog-card .blog-img img {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    margin: auto 0;
+  }
+  .blog .blog-card .blog-content {
+    text-align: start;
+    padding-left: 12px;
+    padding-top: 20px;
+    padding-right: 40px;
+  }
+  .blog .blog-card .blog-content .blog-title {
+    padding-bottom: 10px;
+  }
+  .blog .blog-card .blog-content article {
+    padding-bottom: 10px;
+  }
+  
+  /* Form */
+  .form-main{
+    margin-top: 20px;
+    background-color: #dee2e6;
+    padding: 10px 30px 30px 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .form-main .form-body {
+    justify-content: center;
+    gap: 40px;
+  }
+  .form-main .form-body .form-left iframe {
+    border: 6px solid #212529;
+    border-radius: 12px;
+  }
+  
+  .form-main .form-body .form-right {
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    background-color: #212529;
+  }
+  
+  .form-main .form-body .form-right form h2 {
+    font-size: 36px;
+  }
+  .form-main .form-body .form-right form article {
+    font-size: 18px;
+    padding-top: 8px;
+  }
+  
+  .form-main .form-body .form-right form input {
+    padding-left: 10px;
+    width: 400px;
+    height: 50px;
+    display: block;
+    border-radius: 12px;
+    border: none;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  footer {
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    margin-top: -20px;
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  nav{
+    padding: 0px!important;
+    margin: -100px 0px 0px 0px !important;
+    height: 60px !important;
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  .nav-logo h2{
+    font-size: 30px !important;
+  }
+  .nav-btns a{
+    font-size: 20px !important;
+  }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  ...;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .nav-logo h2{
+      font-size: 35px;
+    }
+    nav{
+      padding: 0px!important;
+    }
+    article {
+        font-size: 16px;
+      }
+    
+    .banner-text h1{
+    font-size: 40px;
+   }
+
+    .blog-card{
+    display: block;
+
+  }
+  .blog .blog-card{
+    width: 360px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .container{
+        padding: 0 30px;
+    }
+  .hero-banner{
+      display: block;
+  }
+    .form-body{
+        display: block;
+    }
+    .form-main .form-body .form-right{
+        max-width: 460px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1330px) {
+    .hero-banner{
+        display: block;
+    }
+    .banner-text{
+        margin: 0;
+    }
+
+}
