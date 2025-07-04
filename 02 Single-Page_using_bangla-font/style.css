@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ChayanaTeesta";
+    src: url(assets/fonts/ChayanaTeesta/Unicode/Li\ Chayana\ Teesta\ Unicode.ttf);
+}
+@font-face {
+    font-family: "ShohidAbuSayedN";
+    src: url(assets/fonts/ShohidAbuSayedN/ShohidAbuSayed/Unicode/Li\ Shohid\ Abu\ Sayed\ Unicode.ttf);
+}
+body{
+    background-color: #E6EAE9;
+}
+.container{
+    width: 60vw;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: "ShohidAbuSayedN";
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: fixed;
+}
+.nav ul li{
+    margin: 0 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 5px 30px;
+    display: inline-block;
+    border-radius: 0 0 5px 5px;
+}
+.nav ul li a:hover{
+    background-color: rgb(148, 20, 20);
+    color: white;
+}
+.heading h1 {
+    font-family: "HalderChinmoyee";
+    font-weight: 400;
+    font-size: 3rem;    
+    padding-top: 50px;
+}
+.image img{
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.content > p {
+    font-family: "ShohidAbuSayedN";
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
