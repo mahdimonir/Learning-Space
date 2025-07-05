@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+<main>
+  <section class="articles-container article-bg">
+    <article class="article article-1">
+      <h2>Desserts</h2>
+      <div class="products-container">
+        <div class="s-product">
+          <img src="images/image-waffle-desktop.jpg" alt="">
+          <p class="p-text">Waffle</p>
+          <h4>Waffle with Berries</h4>
+          <h4 class="s-price c-primary">$6.50</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-creme-brulee-desktop.jpg" alt="">
+          <p class="p-text">Crème Brûlée</p>
+          <h4>Vanilla Bean Crème Brûlée</h4>
+          <h4 class="s-price c-primary">$7.00</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-macaron-desktop.jpg" alt="">
+          <p class="p-text">Macaron</p>
+          <h4>Macaron Mix of Five</h4>
+          <h4 class="s-price c-primary">$8.00</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-tiramisu-desktop.jpg" alt="">
+          <p class="p-text">Tiramisu</p>
+          <h4>Classic Tiramisu</h4>
+          <h4 class="s-price c-primary">$5.50</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-baklava-desktop.jpg" alt="">
+          <p class="p-text">Baklava</p>
+          <h4>Pistachio Baklava</h4>
+          <h4 class="s-price c-primary">$4.00</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-meringue-desktop.jpg" alt="">
+          <p class="p-text">Pie</p>
+          <h4>Lemon Meringue Pie</h4>
+          <h4 class="s-price c-primary">$5.00</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-cake-desktop.jpg" alt="">
+          <p class="p-text">Cake</p>
+          <h4>Red Velvet Cake</h4>
+          <h4 class="s-price c-primary">$4.50</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-brownie-desktop.jpg" alt="">
+          <p class="p-text">Brownie</p>
+          <h4>Salted Caramel Brownie</h4>
+          <h4 class="s-price c-primary">$4.50</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+        <div class="s-product">
+          <img src="images/image-panna-cotta-desktop.jpg" alt="">
+          <p class="p-text">Panna Cotta</p>
+          <h4>Vanilla Panna Cotta</h4>
+          <h4 class="s-price c-primary">$6.50</h4>
+          <button class="add-btn">Add to Card</button>
+        </div>
+      </div>
+    </article>
+
+    <!--Card Section-->
+    <article class="article article-2">
+        <div class="card">
+          <h3 class="c-primary">Your Cart (7<!-- Quantity -->)</h3>
+          <div class="card-items">
+            <div class="card-item">
+              <h5>Classic Tiramisu</h5>
+              <p><span class="c-primary">1x</span> &nbsp; <span class="p-text">@$5.50</span> &nbsp; <span>$5.50</span></p>
+            </div>
+            <div class="card-item">
+              <h5>Vanilla Bean Crème Brûlée</h5>
+              <p><span class="c-primary">4x</span> &nbsp; <span class="p-text">@$7.00</span> &nbsp; <span>$28.00</span></p>
+            </div>
+            <div class="card-item">
+              <h5>Vanilla Panna Cotta</h5>
+              <p><span class="c-primary">2x</span> &nbsp; <span class="p-text">@$6.50</span> &nbsp; <span>$13.00</span></p>
+            </div>
+            <div class="total">
+              <h4>Total</h4>
+              <h4 id="total">$46.50</h4>
+            </div>
+          </div>
+          <button class="c-btn" type="submit">Confirm Order</button>
+        </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <div class="attribution"> 
+    © Coded by <a href="#">Moniruzzaman Mahdi</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+  </div>
+</footer>
+</body>
+</html>
