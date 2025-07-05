@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Display Element</title>
+    <style>
+        li{
+            display: inline;    /*Practiceing how to change block element to inline element*/
+        }
+        a{
+            display: block;      /*Practiceing how to change inline element to block element*/
+        }
+        .room-1{
+            display: inline;
+            border: 3px solid rgb(29, 14, 14);
+            margin: 10px;
+        }                       /*Room-1 for inline element*/
+        .room-1 h3, .room-1 p{
+            display: inline;
+        }
+        .room-2{                /*Room-2 for block element*/
+            width: 400px;
+            height: 150px;
+            border: 3px solid seagreen;
+            margin: 10px;
+        }
+        .room-3{
+            display: inline-block;  /*Room-3 for inline-block element*/
+            width: 400px;
+            height: 150px;
+            border: 3px solid rgb(136, 46, 139);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Practice-1</li>
+        <li>Practice-2</li>
+        <li>Practice-3</li>
+    </ul>
+    <a href="https://mahdimonir.github.io/web-portfolio/">Port folio-1</a>
+    <a href="https://mahdimonir.github.io/personal-website/">Port folio-2</a>
+    <a href="https://github.com/mahdimonir/my-first-website">Port folio-3</a>
+
+    <!--Display proparty inline-->
+    <secttion class="container-1">
+        <div class="room-1">
+            <h3>room-1</h3>
+            <p>Room owned by -1</p>
+        </div>
+        <div class="room-1">
+            <h3>room-2</h3>
+            <p>Room owned by -2</p>
+        </div>
+        <div class="room-1">
+            <h3>room-3</h3>
+            <p>Room owned by -3</p>
+        </div>
+        <div class="room-1">
+            <h3>room-4</h3>
+            <p>Room owned by -4</p>
+        </div>
+    </secttion>
+
+    <!--Display proparty Block-->
+    <secttion class="container-2">
+        <div class="room-2">
+            <h3>room-1</h3>
+            <p>Room owned by -1</p>
+        </div>
+        <div class="room-2">
+            <h3>room-2</h3>
+            <p>Room owned by -2</p>
+        </div>
+        <div class="room-2">
+            <h3>room-3</h3>
+            <p>Room owned by -3</p>
+        </div>
+        <div class="room-2">
+            <h3>room-4</h3>
+            <p>Room owned by -4</p>
+        </div>
+    </secttion>
+
+    <!--Display proparty inline-block-->
+    <secttion class="container-3">
+        <div class="room-3">
+            <h3>room-1</h3>
+            <p>Room owned by -1</p>
+        </div>
+        <div class="room-3">
+            <h3>room-2</h3>
+            <p>Room owned by -2</p>
+        </div>
+        <div class="room-3">
+            <h3>room-3</h3>
+            <p>Room owned by -3</p>
+        </div>
+        <div class="room-3">
+            <h3>room-4</h3>
+            <p>Room owned by -4</p>
+        </div>
+    </secttion>
+</body>
+</html>

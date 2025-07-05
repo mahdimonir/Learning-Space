@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: "Hello ";
+            color: rgb(46, 211, 129);
+            font-size: 20px;
+        }
+        .special-effect::after{
+            content: " Bye";
+            font-size: 15px;
+            color: red;
+        }
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "Crush " counter(section) ": ";
+        }
+        .heart::after{
+            content: " ❤️";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="special-effect">Testing Class</h1>
+    <input name="email" type="text">
+    <br>
+    <input name="password" type="text">
+    <br>
+    <a href="https://mahdimonir.github.io/web-portfopo/">Portfopo</a>
+    <br>
+    <a href="https://mahdimonir.github.io/personal-website/">Personal-website</a>
+    <br>
+    <a href="https://mahdimonir.github.io/visitedpage">None Visited</a>
+    <br>
+        <p class="heart">Alia</p>
+        <p>Dalia</p>
+        <p>Malia</p>
+        <p>Salia</p>
+        <p>Jalia</p>
+        <p>Kalia</p>
+</body>
+</html>

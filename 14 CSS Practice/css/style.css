@@ -1,0 +1,79 @@
+<style>
+    h1{
+
+    }
+    .style{
+        color: darkcyan;
+        background-color: rgb(255, 251, 241);
+        height: 200px;
+        width: 400px;
+    }
+    p{
+        color: purple;
+        font-size: 25px;
+        font-family: monospace;
+    }
+    #idtest{
+        font-size: 30px;
+        color: blue;
+    }
+    .classtest{
+        background-color: dimgrey;
+    }
+    h2.classtest{
+        font-size: 60px;
+    }
+    h5#tagwithid{
+        background-color: hotpink;
+        color: cornsilk;
+        font-size: 30px;
+    }
+    .romantic{
+        color: red;
+    }
+    h4{
+        text-align: center;
+    }    
+    
+                /* Pseudo Class */
+        
+        #hover:hover{
+            color: darkred;
+            font-size: 30px;
+            background-color: darkgrey;
+        }
+        input:focus{
+            font-weight: 700;
+            color: green;
+        }
+        li:first-child{
+            background-color: indianred;
+        }
+        a:visited{
+            color: yellowgreen;
+        }
+
+                /* Pseudo Element */
+
+        .elementB::before{
+            content: "Hello ";
+            color: #00b48d;
+            background-color: lightgrey;
+        }
+        .elementA::after{
+            content: " Bye";
+            color: rgb(71, 95, 228);
+        }
+
+    .blog{
+        background-color: lightgrey;
+        font-family: monospace;
+        border: 5px solid mediumslateblue;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 5px 10px;
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+    }
+</style>
