@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /*  flex-wrap: wrap;  {if i use "@media" then no need to use 'flex-wrap:wrap'} */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .album{
+            border: 3px solid lightgray;
+            border-radius: 30px;
+            margin: 10px;
+            width: 350px;
+            text-align: justify;
+            padding: 1%;
+        }
+        .album img{
+            width: 100%;
+        }
+        @media (max-width: 760px) {
+            .container {
+                flex-direction: column;
+            }
+            .container .album{
+                background-color: rosybrown;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container .album{
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facilis enim perferendis provident, similique animi. Esse dicta perspiciatis, eius pariatur eum, iure est alias nisi hic officia soluta aperiam at voluptatibus distinctio voluptates! Dolorum necessitatibus culpa, ab non in enim?</p>
+        </div>
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Deleniti, veniam hic excepturi nostrum illum voluptates numquam quia enim, quos natus eius blanditiis veritatis aspernatur impedit! Assumenda maxime velit, enim autem non, voluptatem sed soluta nisi inventore, pariatur illo distinctio? Est, vel. Repudiandae voluptas voluptatibus aliquid est maiores deleniti?</p>
+        </div>
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Facere alias nostrum maiores obcaecati laborum a consectetur! Consectetur sequi at id. Totam facilis doloribus consequatur ea porro tenetur? Est quaerat eius, animi laborum provident incidunt voluptate nostrum necessitatibus nobis accusamus ut officia quibusdam deserunt rerum, repellendus, expedita dolorum odit!</p>
+        </div>
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Delectus sunt praesentium dolorum quod impedit soluta unde modi eaque et eveniet quos numquam aut molestias maxime sequi eum dolor, cum quis recusandae fugiat? Expedita nesciunt in earum exercitationem repudiandae maiores mollitia culpa consectetur libero, explicabo corrupti natus asperiores porro?</p>
+        </div>
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Nemo soluta quod ipsum, assumenda maiores in ratione placeat doloremque perferendis nam blanditiis dolores laboriosam animi laborum, cum aut rem dolore. Ipsum deserunt quo non quia laudantium. Necessitatibus quo, maiores cumque accusamus exercitationem aliquam. Deleniti sunt vero itaque expedita nemo.</p>
+        </div>
+        <div class="album">
+            <img src="images/tiger.jpg" alt="">
+            <p>Earum facilis, ut magnam veniam quam rerum quas ex voluptatum iste optio quae impedit odio eos unde quia doloribus blanditiis! Architecto ut ducimus delectus aliquam earum sunt, sapiente nemo dolor, provident nihil quidem dignissimos molestiae atque error corrupti natus animi.</p>
+        </div>
+    </div>
+</body>
+</html>
