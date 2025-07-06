@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        h1{
+            margin-top: 100px;
+        }
+        #flex-container{
+            height: 300px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <!--section 01     Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mahdi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     <!--section 02     Button-->
+    <div class="container">
+        <h1>Hello from Bootstrap</h1>
+        <button class="btn btn-primary">My Button</button>
+        <button class="btn btn-secondary">My Second button</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button type=”button” class=“button-transparent”>Transparent</button>
+    </div>
+     <!--section 03     Images-->
+    <div class="container">
+            <h1>image</h1>
+        <div class="row">
+            <img class="img-fluid rounded-circle col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" src="images/IMG_20220918_222937_248.jpg" alt="">
+            <img class="img-fluid rounded-circle col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" src="images/sample.jpg" alt="">
+            <img class="img-fluid rounded-circle col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" src="images/Html Semantic tag.jpg" alt="">
+            <img class="img-fluid rounded-circle col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" src="images/favicon.png" alt="">
+        </div>
+    </div>
+    <!--section 04     Card section-01-->
+    <div class="container">
+        <h1>Moniruzzaman Mahdi</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/IMG_20220918_222937_248.jpg" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Web design</h5>
+                    <p class="card-text">For designing a beautiful web application, just knock me.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/IMG_20220918_222937_248.jpg" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Web development</h5>
+                    <p class="card-text">For build or develop a beautiful web application, just knock me.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section 05  Card section-02-->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/IMG_20220918_222937_248.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/Html Semantic tag.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/sample.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section 06     Navs-->
+    <div class="container">
+        <h1>Navigation</h1>
+        <nav class="nav">
+          <a class="nav-link" href="">Home</a>
+          <a class="nav-link" href="">Products</a>
+          <a class="nav-link" href="">Shopping Cart</a>
+          <a class="nav-link" href="">Shipping</a>
+        </nav>
+    </div>
+    <!--section 07-->
+    <div class="container">
+        <h1>Gri</h1>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, perspiciatis sunt laborum, minus sapiente dolores reprehenderit ullam nihil ratione corporis, veritatis debitis repudiandae odit amet? Corporis fugit libero consectetur exercitationem molestias voluptates cupiditate mollitia sequi. Eos et voluptatum earum quasi deserunt cumque hic quo accusantium, soluta eius qui neque quis, tenetur eligendi rem animi suscipit deleniti similique eaque fugit dicta placeat voluptas iure non! Necessitatibus optio officia officiis sed minima sequi incidunt, rem voluptates suscipit ipsum! Facilis repellat corrupti qui debitis pariatur molestias, dolorum dicta explicabo facere nisi impedit, ipsam eveniet sapiente adipisci tenetur id error ad quaerat dignissimos quam!</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum beatae et expedita aliquam, quo ullam mollitia consequatur temporibus ea fuga quas. Fugit sint aperiam minus quia amet accusantium error nemo? Natus mollitia ex enim veniam. Repellendus placeat omnis repellat iusto accusantium, maiores distinctio saepe sapiente rerum eius odio, nostrum molestias! Tempore voluptas ab odit veritatis tempora, voluptatibus magni quae facere cumque voluptate corporis repudiandae nulla sequi eveniet doloribus aspernatur tenetur ad maxime recusandae quod, libero porro itaque hic cupiditate. Doloremque fugiat adipisci placeat facere voluptatibus esse iste laboriosam exercitationem fugit. Hic dolorem nulla non omnis a sit libero voluptatibus!</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis ipsa hic sapiente architecto ea, id aliquid totam recusandae, dolores quo vitae nulla quasi sit iusto minus, soluta odit. Dignissimos est culpa officia nostrum reprehenderit aliquid quam facilis doloremque, eaque nisi id commodi magnam quas, natus tempore praesentium. Error, harum! Unde error nesciunt optio animi, hic magnam voluptate sapiente excepturi doloremque minima odio atque harum deleniti cum qui reprehenderit ratione. Molestiae, similique, rem ipsa porro culpa expedita rerum at labore, numquam debitis ipsam? Reiciendis ipsam, incidunt impedit sapiente quis ducimus vel quaerat laboriosam ratione, veritatis, enim nemo! Accusamus, maiores voluptatem!</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem sunt fugit cupiditate eaque quam iste fugiat nostrum doloremque facere porro quibusdam molestias maxime laborum voluptatem quos corrupti odit magnam atque ipsa expedita dolorum libero sint unde. Recusandae maiores, magnam quisquam doloremque tempora est nulla aspernatur tempore voluptatum odio, minus animi perferendis. Autem nihil rerum accusamus placeat tempora, minima, laudantium et quo voluptatem similique rem? Doloribus optio culpa molestiae odio, eaque quos suscipit nostrum exercitationem, corporis architecto fuga temporibus minima sit! Quas, sint laudantium aliquam in odit sunt maxime praesentium, amet, aperiam excepturi officia expedita corrupti reiciendis enim officiis nesciunt?</p>
+            </div>
+        </div>
+    </div>
+    <!--section 08-->
+    <div class="container">
+        <h1>Carousel</h1>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/Mahdi 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/Mahdi 2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/Mahdi 3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    <!--section 09-->
+    <div class="container">
+        <h1>Flex Layout</h1>
+        <div id="flex-container" class="d-flex justify-content-around align-items-center">
+            <div>Shabana</div>
+            <div>Sabnur</div>
+            <div>Shuchorita</div>
+        </div>
+    </div>
+
+      <!--JS code-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
