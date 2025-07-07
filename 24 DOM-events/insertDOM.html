@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore DOM</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3 id="dom">Exploring DOM</h3>
+            <article id="first-article">
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum maiores ipsum, praesentium ullam nam harum unde ab facere et nisi quam suscipit repudiandae consectetur molestiae culpa accusantium explicabo. Vitae.</p>
+            </article>
+            <article class="special">
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Voluptatum totam perferendis molestias praesentium. Eligendi quam aut dolores. Consequatur nemo fuga provident! Sit veniam architecto aut commodi omnis, non, minima obcaecati laudantium illum odio similique repellendus quis, nobis explicabo!</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Veritatis earum optio dolorum voluptatibus expedita quis officia ut numquam aut velit! Ipsa, hic! Veniam natus consectetur libero iusto ratione aliquam. Sint similique esse perferendis odit deleniti perspiciatis est assumenda?</p>
+            </article>
+            <article>
+                <h3>Author Name</h3>
+                <ul id="auther-name">
+                    <li>Arif Azad</li>
+                    <li>Jonkar Mahmud</li>
+                    <li>Sumit Shaha</li>
+                    <li>Hasin Hayder</li>
+                    <li>MH Naim</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script>
+        const article = document.getElementById('first-article');
+        const newParagraph = document.createElement('p');
+        newParagraph.innerHTML = 'This is added by JavaScript.';
+        article.appendChild(newParagraph);
+
+        // add one more auther name
+        const ul = document.getElementById('auther-name');
+        const li = document.createElement('li');
+        li.innerHTML = 'Sradda Kapur';
+        ul.appendChild(li);
+
+    </script>
+</body>
+</html>
