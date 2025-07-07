@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <h1>My List</h1>
+            <ul id="myList">
+                <li id="first" class="item">Lorem, ipsum dolor.</li>
+                <li id="second" class="item">Sint, eos illo.</li>
+                <li class="item">Ipsam, quod sunt!</li>
+                <li class="item">Aperiam, nesciunt dolorum.</li>
+                <li class="item">Laudantium, aspernatur quia!</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        document.getElementById('first').addEventListener('click', function(Event) {
+            console.log('first item clicked');
+        })
+        // Use of deligate for stop bubble
+        document.getElementById('second').addEventListener('click', function(Event) {
+            console.log('second item clicked');
+            event.stopPropagation();
+        })
+        document.getElementById('myList').addEventListener('click', function(Event) {
+            console.log('ul clicked');
+        })
+        document.getElementById('container').addEventListener('click', function(Event) {
+            console.log('container clicked');
+        })
+    </script>
+</body>
+</html>
