@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: dodgerblue;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Click me!</button>
+    <button id="btn2">Click me 2 times!</button>
+
+    <div>This is a box</div>
+
+    <script>
+        let btn1 = document.querySelector("#btn1");
+        btn1.onclick = () => {
+            console.log("btn1 has clicked");
+            let bgbtn = document.querySelector("body");
+            bgbtn.style.backgroundColor = "mediumslateblue"
+        }
+
+        // let btn2 = document.querySelector("#btn2");
+        // btn2.ondblclick = () => {
+        //     let bgbtn = document.querySelector("body");
+        //     bgbtn.style.backgroundColor = "purple"
+        // }
+        btn2.addEventListener("click", () => {
+            console.log("btn2 has clicked");
+            let bgbtn = document.querySelector("body");
+            bgbtn.style.backgroundColor = "purple"
+        })
+
+        let div = document.querySelector("div");
+        div.onmouseover = () => {
+            console.log('I am hare by using JS onmouseover Events.');
+        }
+    </script>
+</body>
+
+</html>

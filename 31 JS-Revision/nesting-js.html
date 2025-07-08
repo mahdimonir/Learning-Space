@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting in JS</title>
+</head>
+
+<body>
+    <script>
+        // Nesting "if else"
+        let age = 19;
+        if (age >= 18) {
+            if (age >= 60) {
+                console.log("Senior");
+            } else {
+                console.log("Middle");
+            }
+        } else {
+            console.log("Child");
+        }
+
+        // Nested Loop
+        for (let i = 0; i < 5; i++) {
+            let str = "";
+            for (let j = 0; j < 5; j++) {
+                str = str + j;
+            }
+            console.log(i, str);
+        }
+    </script>
+</body>
+
+</html>

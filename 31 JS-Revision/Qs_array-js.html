@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qs Array Problems</title>
+</head>
+
+<body>
+    <!-- Qs: Create an array to store companies -> "Bloomberg", "Microsoft", "Ola", "Google", "IBM", "Netflix"
+        a. Remove the first company from the array
+        b. Remove Ola & Add Uber in its place
+        c. Add Amazon at the end -->
+    <script>
+        let companies = ["Bloomberg", "Microsoft", "Ola", "Google", "IBM", "Netflix"]
+        console.log("Main Array:", companies);
+
+        companies.shift();
+        console.log("a:", companies);
+
+        companies.splice(1, 1, "Uber");
+        console.log("b:", companies);
+
+        companies.push("Amazon");
+        console.log("c:", companies);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatch API</title>
+</head>
+
+<body>
+    <button id="btn">Get Cat Facts</button>
+    <p id="fact"></p>
+
+    <script>
+        const URL = "https://cat-fact.herokuapp.com/facts";
+        const factPara = document.querySelector("#fact");
+        const btn = document.querySelector("#btn");
+
+        const getFact = async () => {
+            console.log("getting data ....");
+            let response = await fetch(URL);
+            console.log(response); // JSON Format
+            let data = await response.json();
+            factPara.innerText = data[2].text;
+        };
+        btn.addEventListener("click", getFact);
+    </script>
+</body>
+
+</html>

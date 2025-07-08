@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+
+<body>
+    <script>
+        // Functions:
+        function myFunction(msg) {
+            console.log("Welcome to Apna College!");
+            console.log("We are Learning JS");
+            console.log(msg); // parameter -> input
+        }
+        // myFunction();
+        myFunction("I Love JS"); // argument
+
+
+        // Function for calculate 2 numbers sum:
+        function sum(x, y) {
+            console.log(x + y);
+        }
+        sum(25, 26)
+
+
+        function sum2(x, y) {
+            s = x + y;
+            return s;
+        }
+        let val = sum2(3, 4);
+        console.log(val);
+
+        // Arrow Functions:
+        // sum function:
+        const arrowSum = (a, b) => {
+            console.log(a + b);
+        };
+        arrowSum(5, 8);
+
+        // multipication function:
+        const arrowMul = (a, b) => {
+            console.log(a * b);
+        };
+        arrowMul(5, 8);
+
+    </script>
+</body>
+
+</html>
