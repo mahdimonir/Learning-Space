@@ -3,7 +3,6 @@ function animalCalculator(depth){
     if(depth <= 10){
         animal = depth * 50;
     }
-
     else if(depth <= 20){
         var firstPart = 10 * 50;
         var remaining = depth - 10;
