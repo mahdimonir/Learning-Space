@@ -1,4 +1,3 @@
-
 var student1 = { id:121, phone:'01811', name:"Abir"};
 var student2 = { id:122, phone:'01736', name:"Adiba"};
 
