@@ -1,3 +1,4 @@
+
 // Array
 var friendAge = [19, 20, 18, 21]
 console.log(friendAge);
