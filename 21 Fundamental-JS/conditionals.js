@@ -6,7 +6,6 @@ else{
     console.log("I don't buy this");
 }
 
-
 var busTicket = 50
 if(busTicket == 55){
     console.log("I will go by bus");
