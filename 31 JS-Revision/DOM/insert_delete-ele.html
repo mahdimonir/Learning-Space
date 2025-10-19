@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Insert & Delete Element</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: dodgerblue;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">This is a div</div>
+    <p class="para">This is a simple line</p>
+
+    <script>
+        let newHeading = document.createElement("h1");
+        newHeading.innerHTML = "<i>Hi, I am new!</i>";
+        document.querySelector("body").prepend(newHeading);
+
+        let newBtn = document.createElement("button");
+        newBtn.innerText = "click me!";
+        document.querySelector("div").after(newBtn);
+
+        let para = document.querySelector("p");
+        para.remove();
+    </script>
+</body>
+
+</html>

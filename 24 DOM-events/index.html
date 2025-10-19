@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JabaScript DOM</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>Exploring DOM</h3>
+            <p id="first">My first paragraph.</p>
+            <p>This is my second paragraph.</p>
+        </section>
+    </main>
+    <script>
+        document.title = "DOM testing";
+        document.body.style.backgroundColor = 'aquamarine';
+        console.log(document.title);
+        console.log(document.body);
+
+        /*var body = document.getElementsByTagName('body');
+        body.style.backgroundColor = 'aquamarine';  */
+
+        var first = document.getElementById('first');
+        first.style.color = 'red';
+        first.style.backgroundColor = 'green'
+    </script>
+
+</body>
+</html>

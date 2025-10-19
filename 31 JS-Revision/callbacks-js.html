@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Synchronous programming Callback -->
+    <script>
+        // functions callBack
+        function sum(a, b) {
+            console.log("Sum = ", a + b);
+        }
+
+        function calculator(x, y, sumCallback) {
+            sumCallback(x, y);
+        }
+        calculator(7, 2, sum);
+
+        // arrow Function callBack
+        calculator(9, 2, (a, b) => {
+            console.log("Multify = ", a * b);
+        });
+    </script>
+
+    <!-- Asynchronous programming callback -->
+    <script>
+        console.log("I'm synchronous example");
+
+        const test = () => {
+            console.log("I'm Asynchronous example");
+        }
+        setTimeout(test, 3000);
+    </script>
+</body>
+
+</html>

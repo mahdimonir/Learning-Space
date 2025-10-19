@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Martify</title>
+    <!-- Site icon -->
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/search.css">
+
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="container fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">
+                    <span class="primary-color">BD</span><span class="secondary-color">Martify</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="form search-box">
+                                <input type="text" class="form-control form-input" placeholder="Search Your Desiar">
+                                <span class="search-icon"><i class="fa fa-search"></i></span>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-buy-btn">
+                            <a class="btn-primary btn-navbar" href="#">Buy Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Carousel-->
+    <div class="container">
+        <div id="carouselHero" class="carousel slide secondary-bg" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1 class="hero-heading"><span class="primary-color">Mi LED TV</span> 4A PRO 32</h1>
+                            <p class="para-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                                doloribus illo, accusantium
+                                est a natus deserunt autem quos consequatur magni?</p>
+                            <h1 class="primary-color">$1200</h1>
+                            <div class="btn-group">
+                                <a href="#" class="btn-primary">Buy Now</a>
+                                <a href="#" class="btn-primary btn-secondary">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1 class="hero-heading">Designed For Your <span class="primary-color">Quality Music</span>
+                            </h1>
+                            <p class="para-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                                distinctio vitae nemo id
+                                cum earum laudantium reprehenderit quam fugit quisquam.</p>
+                            <h1 class="primary-color">$420</h1>
+                            <div class="btn-group">
+                                <a href="#" class="btn-primary">Buy Now</a>
+                                <a href="#" class="btn-primary btn-secondary">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1 class="hero-heading">X-Box To <span class="primary-color">Make Your Day</span></h1>
+                            <p class="para-carousel">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                                culpa inventore et maiores
+                                molestiae quas eaque possimus repellat cupiditate tempore.</p>
+                            <h1 class="primary-color">$600</h1>
+                            <div class="btn-group">
+                                <a href="#" class="btn-primary">Buy Now</a>
+                                <a href="#" class="btn-primary btn-secondary">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev caro-btn-prev d-none d-md-block" type="button"
+                data-bs-target="#carouselHero" data-bs-slide="prev">
+                <span><i class="fa-sharp fa-solid fa-arrow-left caro-arrow-btn"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next caro-btn-next d-none d-md-block" type="button"
+                data-bs-target="#carouselHero" data-bs-slide="next">
+                <span><i class="fa-sharp fa-solid fa-arrow-left caro-arrow-btn"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Categories Section Start-->
+    <div class="container categories" id="categories">
+        <div class="center-heading">
+            <h2 class="heading-container">Product Category</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#watch';">
+                <div class="ctg-1 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Watch</h1>
+                    <img src="images/categories/watch.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#bags';">
+                <div class="ctg-2 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Bag</h1>
+                    <img src="images/categories/bag.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#shoes';">
+                <div class="ctg-3 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Shoes</h1>
+                    <img src="images/categories/shoes.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#headphones';">
+                <div class="ctg-4 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Headphones</h1>
+                    <img src="images/categories/headphone.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#accessories';">
+                <div class="ctg-5 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Accessories</h1>
+                    <img src="images/categories/accessories.png" alt="">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-3" style="cursor: pointer;" onclick="window.location='#gadgets';">
+                <div class="ctg-6 d-flex justify-content-between align-items-center">
+                    <h1 class="col-sm-6">Gadgets</h1>
+                    <img src="images/categories/xbox.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Categories Section End-->
+
+    <!-- Watch Section Start -->
+    <div class="container watch" id="watch">
+        <div class="center-heading">
+            <h3 class="heading-container">Watch</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/watchs/watch-6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">WATCH Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Watch Section End -->
+
+    <!-- Bags Section Start -->
+    <div class="container bags" id="bags">
+        <div class="center-heading">
+            <h3 class="heading-container">Bags</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">RED BAG</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">BAG-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">BAG Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">RED BAG</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">BAG-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/bags/bag-6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">BAG Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bags Section End -->
+
+    <!-- Shoes Section Start -->
+    <div class="container shoes" id="shoes">
+        <div class="center-heading">
+            <h3 class="heading-container">SHOE</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <div class="card-img h-50">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/shoes/shoe-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/shoes/shoe-5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/shoes/shoe-6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">SHOE Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shoes Section End -->
+
+    <!-- Headphones Section Start -->
+    <div class="container headphones" id="headphones">
+        <div class="center-heading">
+            <h3 class="heading-container">Headphones</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/headphones/headphone-6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">HEADPHONE Airmax</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Headphones Section End -->
+
+    <!-- Accessories Section Start -->
+    <div class="container accessories" id="accessories">
+        <div class="center-heading">
+            <h3 class="heading-container">Accessories</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/accesories/accessories-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">CAMERA-350</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/accesories/accessories-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">CAMERA-320</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+                <div class="card shadow-lg h-80">
+                    <img src="images/accesories/accessories-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">Red MOUSE</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Accessories Section End -->
+
+    <!-- Gadgets Section Start -->
+    <div class="container gadgets" id="gadgets">
+        <div class="center-heading">
+            <h3 class="heading-container">Gadgets</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/gadgets/gadget-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">X-BOX 4</h3>
+                        <p class="para-card">The YEEZY BOOST 350 V2features an upper composed of re-engineered
+                            Primeknit. The post-dyed monofilament side stripe is woven into the upper.</p>
+                        <h2 class="primary-color">$120</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-lg h-80">
+                    <img src="images/gadgets/gadget-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">PS-5</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae facilis
+                            expedita ex numquam! Asperiores perferendis quas dolor iure laboriosam consectetur?</p>
+                        <h2 class="primary-color">$320</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+                <div class="card shadow-lg h-80">
+                    <img src="images/gadgets/gadget-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="primary-color">LED TV</h3>
+                        <p class="para-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores,
+                            eligendi atque repellat dolorum vel aspernatur dolor at assumenda! Dolor.</p>
+                        <h2 class="primary-color">$350</h2>
+                        <div class="btn-group">
+                            <button class="btn-primary">BUY NOW</button>
+                            <button class="btn-primary btn-secondary">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Gadgets Section End -->
+
+    <!-- About Section Start -->
+    <div class="container about" id="about">
+        <div class="center-heading mb-md-5">
+            <h3 class="heading-container">About Us</h3>
+        </div>
+        <div class="secondary-bg about-us">
+            <div class="row h-100">
+                <div class="col-lg-6">
+                    <div class="py-3 px-4 pe-md-5">
+                        <div>
+                            <h3 class="about-heading"><span class="primary-color">BD</span> <span
+                                    class="secondary-color">Martify</span></h3>
+                        </div>
+                        <p class="para-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sit
+                            atque delectus obcaecati, maxime voluptate perspiciatis quam expedita! Laboriosam,
+                            itaque?</p>
+                        <p class="para-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                            maiores facere, cumque ratione expedita quod labore hic veritatis obcaecati incidunt.
+                        </p>
+                        <a href="#" class="link-about"> <span class="span-about"></span> Read More <span
+                                class="icon-arrow"><i class="fa-solid fa-arrow-right"></i></span> </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img-about">
+                        <img class="d-none d-md-block" src="./images/banner-images/about.jpg" alt="About Banner Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Testimonials Section Start -->
+    <div class="container">
+        <div class="secondary-bg h-100 py-5">
+            <div class="px-3">
+                <h2 class="heading-testimonial mb-5">What People Think <span class="primary-color">About Us</span></h2>
+                <p class="para-testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore
+                    vitae
+                    recusandae mollitia reprehenderit doloribus ab, commodi rem assumenda ad.</p>
+            </div>
+            <!-- Testimoni Slider Start -->
+            <div class="container-fluid">
+                <div id="TestimonialSlider" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators TC-indicators">
+                        <button type="button" data-bs-target="#TestimonialSlider" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#TestimonialSlider" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container-clients">
+                                <div class="row">
+                                    <!-- 1st Client -->
+                                    <div class="col-lg-6 col-md-12 my-2">
+                                        <div class="container-content h-100">
+                                            <div class="image-clients h-50"><img src="./images/clients/client-1.png"
+                                                    class="img-client h-100" alt=""></div>
+                                            <div class="icons-stars">
+                                                <ul class="rating">
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <h3 class="client-name">Aiden Mathide</h3>
+                                                <p class="para-client">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Beatae, dolor ipsa amet ducimus cumque iusto.
+                                                </p>
+                                                <h5 class="client-profession para-client">Web Designer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2nd Client -->
+                                    <div class="col-lg-6 col-md-12 my-2">
+                                        <div class="container-content h-100">
+                                            <div class="image-clients h-50"><img src="./images/clients/client-2.png"
+                                                    class="img-client h-100" alt=""></div>
+                                            <div class="icons-stars">
+                                                <ul class="rating">
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <h3 class="client-name">John Abraham</h3>
+                                                <p class="para-client">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Beatae, dolor ipsa amet ducimus cumque iusto.
+                                                </p>
+                                                <h5 class="client-profession para-client">Web Designer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="containe container-clients">
+                                <div class="row">
+                                    <!-- 3rd Client -->
+                                    <div class="col-lg-6 col-md-12 my-2">
+                                        <div class="container-content h-100">
+                                            <div class="image-clients h-50"><img src="./images/clients/client-3.png"
+                                                    class="img-client h-100" alt=""></div>
+                                            <div class="icons-stars">
+                                                <ul class="rating">
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <h3 class="client-name">Mathide Wick</h3>
+                                                <p class="para-client">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Beatae, dolor ipsa amet ducimus cumque iusto.
+                                                </p>
+                                                <h5 class="client-profession para-client">Web Designer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4th Client -->
+                                    <div class="col-lg-6 col-md-12 my-2">
+                                        <div class="container-content h-100">
+                                            <div class="image-clients h-50"><img src="./images/clients/client-4.png"
+                                                    class="img-client h-100" alt=""></div>
+                                            <div class="icons-stars">
+                                                <ul class="rating">
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                    <li class="stars"><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                                <h3 class="client-name">Stip Aiden</h3>
+                                                <p class="para-client">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Beatae, dolor ipsa amet ducimus cumque iusto.
+                                                </p>
+                                                <h5 class="client-profession para-client">Web Designer</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimoni Slider End -->
+        </div>
+    </div>
+    <!-- Testimonials Section End -->
+
+    <!-- Contact Form Section Start -->
+    <div class="container mb-5 contact" id="contact">
+        <div class="center-heading">
+            <h3 class="heading-container">Contact Us</h3>
+        </div>
+        <div class="secondary-bg h-100 py-4 px-2">
+            <div class="containe">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-2 mb-lg-0">
+                        <form action="" class="form-origin h-100 p-5 pb-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="mb-3 text-center">
+                                        <a href="#" class="btn-contact btn-primary">Send Message Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 mt-2 mt-lg-0">
+                        <div class="content-contact h-100 px-5 py-5 py-lg-0">
+                            <h2 class="heading-content mb-4">More About <span class="primary-color">BD</span> <span
+                                    class="secondary-color">Martify</span></h2>
+                            <p class="para-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas unde
+                                eveniet adipisci, fugit omnis minima?</p>
+                            <p class="para-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                dolorum
+                                exercitationem vel.</p>
+                            <div class="d-flex gap-2 mt-5 social-icon">
+                                <a href="https://www.facebook.com/bdmartify" target="_blank"><i class="fa-brands fa-facebook mx-2 fs-2"></i></a>
+                                <a href="tel:+13055555555"><i class="fa-solid fa-phone mx-2 fs-2"></i></a>
+                                <a href="mailto:bdmartify@gmail.com"><i class="fa-solid fa-envelope mx-2 fs-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="mb-2 py-3 text-center">
+            <small>&#169;2024 . BD Martify . @MAHDI . All rights reserved .</small>
+        </div>
+    </footer>
+    <!-- Footer Section Start -->
+
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <!--JS Code Link for Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

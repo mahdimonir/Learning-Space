@@ -1,8 +1,8 @@
 # 🎓 Learning Space
 
-Welcome to **Learning Space** — my personal repository where I document, experiment with, and refine my coding skills. This is where curiosity meets code, and ideas turn into practice.
+# Learning Space
 
-## 📌 About
+This is the place where i update my regular practices and project's. It’s like a space for codes. 
 
 This repository serves as a dynamic notebook of my coding journey. It's a place for:
 - Practicing algorithms and data structures
@@ -10,20 +10,9 @@ This repository serves as a dynamic notebook of my coding journey. It's a place 
 - Building small projects and mini-tools
 - Experimenting with concepts before applying them in production-level work
 
-Whether it's frontend, backend, or full-stack — you'll find a variety of topics and stacks represented here.
 
-## 🚀 Tech Stack I Explore
-
-- **Frontend**: HTML, CSS, JavaScript, React, Next.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, MySQL (occasionally)
-- **Others**: Git, GitHub, REST APIs, Firebase, Redis, Cloudinary
-
-## 📁 Repository Structure
-- `algorithms/` – Solutions to DSA problems
-- `projects/` – Small-scale projects and MVPs
-- `snippets/` – Handy reusable code blocks
-- `playground/` – Experimental and scratch code
+### 🚀 About Me
+Hey! I'm Mahdi Moniruzzaman. A MERN stack Developer...
 
 ## 🎯 Goals
 

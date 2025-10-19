@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Qs Solving</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello JavaScript!</h2>
+
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+
+
+    <script>
+        // Qs. Create a H2 heading element with text - "Hello JavaScript". Append "from Apna College students" to this text using JS.
+        let h2 = document.querySelector("h2")
+        console.dir(h2.innerText);
+
+        h2.innerText = h2.innerText + " from Apna College students."
+
+        // Qs. Create 3 divs with common class name- "box". Access them & add some unique text to each of them.
+        let divs = document.querySelectorAll(".box");
+        let idx = 1;
+        for (div of divs) {
+            div.innerText = `This is Unique text ${idx}`;
+            idx++;
+        }
+
+        // divs[0].innerText = "This is Unique text 1"
+        // divs[1].innerText = "This is Unique text 2"
+        // divs[2].innerText = "This is Unique text 3"
+
+    </script>
+</body>
+
+</html>

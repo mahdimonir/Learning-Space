@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous is JS</title>
+</head>
+
+<body>
+    <!-- There are some example of Synchronous & Asynchronous program in JS -->
+    <script>
+        function hello() {  // Asynchronous
+            console.log("hello world after 2s");
+        }
+        setTimeout(hello, 2000);
+
+        console.log("one");  // Synchronous
+        console.log("two");  // Synchronous
+
+        setTimeout(() => {  // Asynchronous
+            console.log("I'm from setTimeOut after 5s");
+        }, 5000);
+
+        console.log("three");  // Synchronous
+        console.log("four");  // Synchronous
+    </script>
+</body>
+
+</html>

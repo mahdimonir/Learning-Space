@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management Company</title>
+</head>
+<body>
+    <h1>Exploring Events</h1>
+    <button onclick="submitButton()">click me-1</button>
+    <button id="button2">click me-2</button>
+    <button id="button3">click me-3</button>
+    <button id="button4">click me-4</button>
+    <button id="button5">click me-5</button>
+
+    <script>
+        // Button 01
+        function submitButton(){
+            console.log('Thank you for being with us.');
+        }
+        
+        // Button 02
+        const secondButton = document.getElementById('button2');
+        secondButton.onclick = function(){
+            console.log('second button clicked');
+        }
+        
+        // Button 03
+        function clickBG1(){
+            document.body.style.backgroundColor = 'cyan';
+        }
+        const therdButton = document.getElementById('button3');
+        therdButton.onclick = clickBG1;
+        
+        // Button 04
+        function clickBG2(){
+            document.body.style.backgroundColor = 'tomato';
+        }
+        const forthButton = document.getElementById('button4');
+        forthButton.addEventListener('click', clickBG2);
+        
+        // Button 05
+        document.getElementById('button5').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'aquamarine';
+        })
+    </script>
+</body>
+</html>

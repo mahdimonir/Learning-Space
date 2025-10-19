@@ -1,0 +1,36 @@
+body{
+    background-color: #F3F1FF !important;
+    margin-top: 100px !important;
+}
+main{
+    max-width: 870px;
+}
+.bg-nav{
+    background-color: #562EFF;
+}
+.navbar-w{
+    max-width: 870px;
+}
+.navbar img{
+    width: 40px;
+}
+.player img{
+    width: 56px;
+}
+.title-color, .tc-blue{
+    color: #562EFF;
+}
+.tc-gray{
+    color: gray;
+}
+.tc-red{
+    color: tomato;
+}
+.card{
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 3px 3px 5px lightgrey !important;
+}
+footer{
+    text-align: center;
+}
