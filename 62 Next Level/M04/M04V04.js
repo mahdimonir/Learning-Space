@@ -1,6 +1,6 @@
 //? Problem Statement
 
-//* Given an array of integers numbers and an integer target, return the indixs of two numbers such that they add up to target.
+//* Given an array of integers numbers and an integer target, return the indices of two numbers such that they add up to target.
 //* You may assume that each input would have exactly one solution, and you may not use the same element twice
 //* If there is no solution then retunr undefined
 
