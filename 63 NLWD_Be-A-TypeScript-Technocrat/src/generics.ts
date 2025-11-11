@@ -30,3 +30,21 @@ const userList: GenericArray<{ name: string; age: number }> = [
     age: 25,
   },
 ];
+
+//* While array is large
+type LargeUser = {
+  id: string;
+  name: string;
+  age: number;
+  gender: "male" | "female";
+  role: "admin" | "user";
+};
+const largeUserList: GenericArray<LargeUser> = [
+  {
+    id: "123dkjsaow",
+    name: "Mr. Hasan",
+    age: 24,
+    gender: "male",
+    role: "user",
+  },
+];
