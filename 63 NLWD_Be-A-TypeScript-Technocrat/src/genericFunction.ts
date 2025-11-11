@@ -42,5 +42,6 @@ const student2 = {
   hasBook: false,
   isPresent: true,
 };
-
-console.log("", { student1 }, "\n", { student2 });
+const result1 = addStrudentInfo(student1);
+const result2 = addStrudentInfo(student2);
+console.log("", { result1 }, "\n", { result2 });
