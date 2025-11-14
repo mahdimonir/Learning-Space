@@ -29,4 +29,4 @@ const student1 = new StudentAccount(4512, "Mr. Raihan", 200);
 
 user1.addBalance(100);
 
-console.log("", { user1 }, "\n", { student1 });
+console.log("", user1, "\n", student1);
