@@ -1,0 +1,16 @@
+{
+  "name": "65-nlwd_be-a-node-express-expert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "append-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mahdi",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
