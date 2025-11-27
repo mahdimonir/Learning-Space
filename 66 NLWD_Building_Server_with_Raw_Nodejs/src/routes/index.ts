@@ -44,7 +44,7 @@ addRoutes("PUT", "/api/users/:id", async (req, res) => {
   if (index === -1) {
     sendJson(res, 404, {
       success: false,
-      message: "user not found",
+      message: `User with id ${id} not found`,
     });
   }
 
@@ -59,5 +59,29 @@ addRoutes("PUT", "/api/users/:id", async (req, res) => {
     success: true,
     message: `Updated user info for id ${id}`,
     data: users[index],
+  });
+});
+
+addRoutes("DELETE", "/api/users/:id", (req, res) => {
+  const { id } = (req as any).params;
+
+  const users = readUsers();
+
+  const initialLength = users.length;
+  const updatedUsers = users.filter((user: any) => user.id != id);
+
+  if (updatedUsers.length === initialLength) {
+    sendJson(res, 404, {
+      success: false,
+      message: `User with id ${id} not found`,
+    });
+    return;
+  }
+
+  writeUsers(updatedUsers);
+
+  sendJson(res, 200, {
+    success: true,
+    message: `User with id ${id} deleted successfully`,
   });
 });
